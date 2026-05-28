@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marzhendo Galang Saputra - Portfolio</title>
+  <meta name="description" content="Portfolio of Marzhendo Galang Saputra, a Software Engineer based in Purwokerto, ID specializing in Backend development, desktop applications, and Data Science.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="pf-root">
+    <h2 class="sr-only">Portfolio website concept mockup for Marzhendo Galang Saputra with clean minimal aesthetic</h2>
+
+    <!-- NAV -->
+    <nav class="pf-nav">
+      <div class="pf-nav-logo">MARZHENDO.DEV</div>
+      <ul class="pf-nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="pf-status">
+        <div class="pf-dot"></div>
+        Open to work
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="pf-hero" id="about">
+      <div>
+        <div class="pf-hero-label">Software Engineer · Purwokerto, ID</div>
+        <h1 class="pf-hero-name">Marz<em>hendo</em><br>Galang.</h1>
+        <div class="pf-hero-title">// craft software, secure data, model intelligence</div>
+      </div>
+      <div class="pf-hero-right">
+        <p class="pf-hero-bio">I design and build high-performance backend systems, offline desktop applications using Wails and Tauri, and develop data-driven intelligence solutions. Zero-knowledge security, clean structures, reliable delivery.</p>
+        <div class="pf-hero-tags">
+          <span class="pf-tag">Golang</span>
+          <span class="pf-tag">Python</span>
+          <span class="pf-tag">React</span>
+          <span class="pf-tag">Typescript</span>
+          <span class="pf-tag">Supabase</span>
+          <span class="pf-tag">Wails</span>
+          <span class="pf-tag">Tauri</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <div class="pf-stats">
+      <div class="pf-stat"><div class="pf-stat-num">10+</div><div class="pf-stat-label">Projects Shipped</div></div>
+      <div class="pf-stat"><div class="pf-stat-num">2yr</div><div class="pf-stat-label">Experience</div></div>
+      <div class="pf-stat"><div class="pf-stat-num">4</div><div class="pf-stat-label">Open Source Repos</div></div>
+      <div class="pf-stat"><div class="pf-stat-num">∞</div><div class="pf-stat-label">Coffee Consumed</div></div>
+    </div>
+
+    <!-- PROJECTS SLIDESHOW -->
+    <div class="pf-section-header" id="projects">
+      <span class="pf-section-title">Selected Projects</span>
+    </div>
+    <div class="pf-slideshow">
+      <div class="pf-slides" id="slides">
+
+        <!-- Slide 1: PurePress -->
+        <div class="pf-slide">
+          <div class="pf-slide-visual v1">
+            <img src="src/screenshots/PurePress.png" alt="PurePress Screenshot" class="pf-slide-img">
+          </div>
+          <div class="pf-slide-info">
+            <div class="pf-slide-num">01 / 04</div>
+            <h3 class="pf-slide-name">🌿 PurePress</h3>
+            <p class="pf-slide-desc">High-performance, 100% offline desktop application for image and PDF compression. Fast, local, and privacy-first.</p>
+            <div class="pf-slide-stack">
+              <span class="pf-stack-pill">Go</span>
+              <span class="pf-stack-pill">React.js</span>
+              <span class="pf-stack-pill">Wails v2</span>
+              <span class="pf-stack-pill">Ghostscript</span>
+            </div>
+            <a href="https://github.com/marzhendo/PurePress" target="_blank" class="pf-slide-link">View project <i class="ti ti-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <!-- Slide 2: VaultKey -->
+        <div class="pf-slide">
+          <div class="pf-slide-visual v2">
+            <img src="src/screenshots/Vault-key.png" alt="VaultKey Screenshot" class="pf-slide-img">
+          </div>
+          <div class="pf-slide-info">
+            <div class="pf-slide-num">02 / 04</div>
+            <h3 class="pf-slide-name">🔐 VaultKey</h3>
+            <p class="pf-slide-desc">Zero-knowledge local desktop password manager. Stores and encrypts credentials client-side with AES-256-GCM and Argon2id.</p>
+            <div class="pf-slide-stack">
+              <span class="pf-stack-pill">Tauri</span>
+              <span class="pf-stack-pill">Rust</span>
+              <span class="pf-stack-pill">React.js</span>
+              <span class="pf-stack-pill">TypeScript</span>
+              <span class="pf-stack-pill">SQLite</span>
+            </div>
+            <a href="https://github.com/marzhendo/VaultKey" target="_blank" class="pf-slide-link">View project <i class="ti ti-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <!-- Slide 3: FocusGuard -->
+        <div class="pf-slide">
+          <div class="pf-slide-visual v3">
+            <img src="src/screenshots/Focus-Guard.png" alt="Focus-Guard Screenshot" class="pf-slide-img">
+          </div>
+          <div class="pf-slide-info">
+            <div class="pf-slide-num">03 / 04</div>
+            <h3 class="pf-slide-name">👁️ Focus-Guard</h3>
+            <p class="pf-slide-desc">AI-powered Pomodoro productivity dashboard. Leverages browser webcam feeds and computer vision to alert users when they are distracted.</p>
+            <div class="pf-slide-stack">
+              <span class="pf-stack-pill">JavaScript</span>
+              <span class="pf-stack-pill">HTML &amp; CSS</span>
+              <span class="pf-stack-pill">TensorFlow.js</span>
+              <span class="pf-stack-pill">Teachable Machine</span>
+            </div>
+            <a href="https://github.com/marzhendo/Focus-Guard" target="_blank" class="pf-slide-link">View project <i class="ti ti-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <!-- Slide 4: Neon Stakes -->
+        <div class="pf-slide">
+          <div class="pf-slide-visual v4">
+            <img src="src/screenshots/neon-stakes.png" alt="Neon Stakes Screenshot" class="pf-slide-img">
+          </div>
+          <div class="pf-slide-info">
+            <div class="pf-slide-num">04 / 04</div>
+            <h3 class="pf-slide-name">🎰 Neon Stakes</h3>
+            <p class="pf-slide-desc">Transactional betting simulator built to research concurrent transaction safe states, weighted RNG algorithms, and dark patterns in UI/UX.</p>
+            <div class="pf-slide-stack">
+              <span class="pf-stack-pill">Next.js</span>
+              <span class="pf-stack-pill">Golang</span>
+              <span class="pf-stack-pill">PostgreSQL</span>
+              <span class="pf-stack-pill">Supabase</span>
+              <span class="pf-stack-pill">Framer Motion</span>
+            </div>
+            <a href="https://github.com/marzhendo/neon-stakes" target="_blank" class="pf-slide-link">View project <i class="ti ti-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CONTROLS -->
+    <div class="pf-slide-controls">
+      <button class="pf-ctrl-btn" id="prev" aria-label="Previous"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
+      <button class="pf-ctrl-btn" id="next" aria-label="Next"><i class="ti ti-arrow-right" aria-hidden="true"></i></button>
+      <div class="pf-dots">
+        <div class="pf-dot-ind active" data-i="0"></div>
+        <div class="pf-dot-ind" data-i="1"></div>
+        <div class="pf-dot-ind" data-i="2"></div>
+        <div class="pf-dot-ind" data-i="3"></div>
+      </div>
+      <div class="pf-slide-counter" id="counter">01 / 04</div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="pf-section-header" id="skills" style="padding-top: 40px;">
+      <span class="pf-section-title">Skills &amp; Expertise</span>
+    </div>
+    <div class="pf-skills">
+      <!-- Column 1: Backend & Desktop -->
+      <div class="pf-skills-col">
+        <div class="pf-col-title">Backend &amp; Desktop</div>
+        <div class="pf-skill-row"><span class="pf-skill-name">Go / Golang</span><div class="pf-skill-bar-wrap"><div class="pf-skill-bar" style="width:90%"></div></div></div>
+        <div class="pf-skill-row"><span class="pf-skill-name">Python</span><div class="pf-skill-bar-wrap"><div class="pf-skill-bar" style="width:85%"></div></div></div>
+        <div class="pf-skill-row"><span class="pf-skill-name">Node.js</span><div class="pf-skill-bar-wrap"><div class="pf-skill-bar" style="width:80%"></div></div></div>
+        <div class="pf-skill-row"><span class="pf-skill-name">Wails / Tauri</span><div class="pf-skill-bar-wrap"><div class="pf-skill-bar" style="width:88%"></div></div></div>
+      </div>
+      <!-- Column 2: Frontend & Styling -->
+      <div class="pf-skills-col">
+        <div class="pf-col-title">Frontend &amp; Styling</div>
+        <div class="pf-skill-row"><span class="pf-skill-name">HTML &amp; CSS</span><div class="pf-skill-bar-wrap"><div class="pf-skill-bar" style="width:95%"></div></div></div>
+        <div class="pf-skill-row"><span class="pf-skill-name">JavaScript</span><div class="pf-skill-bar-wrap"><div class="pf-skill-bar" style="width:90%"></div></div></div>
+        <div class="pf-skill-row"><span class="pf-skill-name">TypeScript</span><div class="pf-skill-bar-wrap"><div class="pf-skill-bar" style="width:85%"></div></div></div>
+        <div class="pf-skill-row"><span class="pf-skill-name">React / Tailwind</span><div class="pf-skill-bar-wrap"><div class="pf-skill-bar" style="width:90%"></div></div></div>
+      </div>
+      <!-- Column 3: Database & Cloud -->
+      <div class="pf-skills-col">
+        <div class="pf-col-title">Database &amp; Cloud</div>
+        <div class="pf-skill-row"><span class="pf-skill-name">MySQL</span><div class="pf-skill-bar-wrap"><div class="pf-skill-bar" style="width:88%"></div></div></div>
+        <div class="pf-skill-row"><span class="pf-skill-name">Supabase</span><div class="pf-skill-bar-wrap"><div class="pf-skill-bar" style="width:85%"></div></div></div>
+        <div class="pf-skill-row"><span class="pf-skill-name">PostgreSQL</span><div class="pf-skill-bar-wrap"><div class="pf-skill-bar" style="width:80%"></div></div></div>
+        <div class="pf-skill-row"><span class="pf-skill-name">Docker / CI-CD</span><div class="pf-skill-bar-wrap"><div class="pf-skill-bar" style="width:75%"></div></div></div>
+      </div>
+      <!-- Column 4: Data Science -->
+      <div class="pf-skills-col">
+        <div class="pf-col-title">Data Science</div>
+        <div class="pf-skill-row"><span class="pf-skill-name">Jupyter Notebook</span><div class="pf-skill-bar-wrap"><div class="pf-skill-bar" style="width:85%"></div></div></div>
+        <div class="pf-skill-row"><span class="pf-skill-name">Pandas &amp; NumPy</span><div class="pf-skill-bar-wrap"><div class="pf-skill-bar" style="width:80%"></div></div></div>
+        <div class="pf-skill-row"><span class="pf-skill-name">Matplotlib &amp; Seaborn</span><div class="pf-skill-bar-wrap"><div class="pf-skill-bar" style="width:75%"></div></div></div>
+        <div class="pf-skill-row"><span class="pf-skill-name">Scikit-Learn</span><div class="pf-skill-bar-wrap"><div class="pf-skill-bar" style="width:70%"></div></div></div>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="pf-contact" id="contact">
+      <div>
+        <h2 class="pf-contact-heading">Let's build<br><em>something</em><br>together.</h2>
+        <p class="pf-contact-sub">Available for full-time roles, freelance projects, open-source collaboration, and custom backend/desktop engineering.</p>
+      </div>
+      <div class="pf-contact-links">
+        <a href="mailto:marzhendo03@gmail.com" class="pf-contact-link">
+          <span><i class="ti ti-mail" aria-hidden="true"></i> Email</span>
+          <span>marzhendo03@gmail.com →</span>
+        </a>
+        <a href="https://github.com/marzhendo" target="_blank" class="pf-contact-link">
+          <span><i class="ti ti-brand-github" aria-hidden="true"></i> GitHub</span>
+          <span>github.com/marzhendo →</span>
+        </a>
+        <a href="https://www.linkedin.com/in/marzhendo/" target="_blank" class="pf-contact-link">
+          <span><i class="ti ti-brand-linkedin" aria-hidden="true"></i> LinkedIn</span>
+          <span>linkedin.com/in/marzhendo →</span>
+        </a>
+        <a href="https://wa.me/6285156975860" target="_blank" class="pf-contact-link">
+          <span><i class="ti ti-brand-whatsapp" aria-hidden="true"></i> WhatsApp</span>
+          <span>+6285156975860 →</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="pf-footer">
+      <span class="pf-footer-text">© 2026 MARZHENDO.DEV</span>
+      <span class="pf-footer-text">DESIGNED &amp; BUILT WITH PRECISION</span>
+    </footer>
+  </div>
+</body>
+</html>
