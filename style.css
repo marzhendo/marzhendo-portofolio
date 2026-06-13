@@ -71,7 +71,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  align-items: end;
+  align-items: center;
 }
 .pf-hero-label {
   font-family: 'DM Mono', monospace;
@@ -122,6 +122,102 @@
   border-radius: 2px;
   color: #555;
   letter-spacing: 0.05em;
+}
+
+/* CTA BUTTONS */
+.pf-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  padding: 10px 20px;
+  border-radius: 2px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pf-btn-primary {
+  background: #111;
+  color: #fff;
+  border: 1px solid #111;
+}
+.pf-btn-primary:hover {
+  background: #C85A2A;
+  border-color: #C85A2A;
+}
+
+.pf-btn-secondary {
+  background: transparent;
+  color: #111;
+  border: 1px solid #D8D8D4;
+}
+.pf-btn-secondary:hover {
+  border-color: #111;
+}
+
+.pf-hero-cta {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+/* EDUCATION */
+.pf-education {
+  border-top: 1px solid #E8E8E4;
+  border-bottom: 1px solid #E8E8E4;
+  padding: 32px 40px;
+}
+
+.pf-edu-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.pf-edu-degree {
+  font-family: 'DM Serif Display', serif;
+  font-size: 22px;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.pf-edu-school {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 4px;
+}
+
+.pf-edu-year {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: #999;
+  letter-spacing: 0.08em;
+}
+
+.pf-cert-badge {
+  display: inline-block;
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  padding: 3px 10px;
+  background: #FFF3E0;
+  color: #854F0B;
+  border-radius: 2px;
+  margin-right: 8px;
+  letter-spacing: 0.04em;
+}
+
+.pf-edu-cert {
+  font-size: 13px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
 }
 
 /* STATS ROW */
@@ -355,17 +451,28 @@
   font-size: 14px;
   color: #333;
 }
-.pf-skill-bar-wrap {
-  width: 120px;
-  height: 3px;
-  background: #E8E8E4;
-  border-radius: 1px;
-  overflow: hidden;
+.pf-skill-level {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  padding: 3px 10px;
+  border-radius: 2px;
+  letter-spacing: 0.04em;
 }
-.pf-skill-bar {
-  height: 100%;
+
+.pf-skill-level.expert {
   background: #111;
-  border-radius: 1px;
+  color: #fff;
+}
+
+.pf-skill-level.advanced {
+  background: #F0EFEB;
+  color: #444;
+}
+
+.pf-skill-level.familiar {
+  background: transparent;
+  color: #999;
+  border: 1px solid #E8E8E4;
 }
 
 /* CONTACT */
@@ -425,6 +532,83 @@
   letter-spacing: 0.06em;
 }
 
+/* CERTIFICATES */
+.pf-certificates {
+  padding: 32px 40px;
+  border-bottom: 1px solid #E8E8E4;
+}
+
+.pf-cert-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.pf-cert-card {
+  background: #fff;
+  border: 1px solid #E8E8E4;
+  border-radius: 4px;
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: border-color 0.15s;
+  text-decoration: none;
+}
+
+.pf-cert-card:hover {
+  border-color: #C85A2A;
+}
+
+.pf-cert-platform {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.pf-cert-platform.ibm    { color: #185FA5; }
+.pf-cert-platform.google { color: #3B6D11; }
+.pf-cert-platform.dicoding { color: #854F0B; }
+.pf-cert-platform.dqlab  { color: #993C1D; }
+.pf-cert-platform.ngulik { color: #0F6E56; }
+
+.pf-cert-name {
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 13px;
+  color: #111;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.pf-cert-date {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: #BBB;
+  margin-top: auto;
+}
+
+.pf-cert-verify {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: #C85A2A;
+  margin-top: auto;
+  letter-spacing: 0.04em;
+}
+
+.pf-cert-verify.no-link {
+  color: #CCC;
+}
+
+a.pf-cert-card {
+  cursor: pointer;
+}
+
+a.pf-cert-card:hover .pf-cert-verify {
+  text-decoration: underline;
+}
+
 /* RESPONSIVE DESIGN */
 @media (max-width: 1024px) {
   .pf-hero {
@@ -467,6 +651,12 @@
     gap: 32px;
     padding: 40px 24px;
   }
+  .pf-cert-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .pf-certificates {
+    padding: 32px 24px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -480,6 +670,7 @@
     width: 100%;
     justify-content: space-between;
   }
+
   .pf-hero-name {
     font-size: 48px;
   }
@@ -494,6 +685,13 @@
   .pf-stat:last-child {
     border-bottom: none;
   }
+  .pf-edu-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .pf-education {
+    padding: 24px;
+  }
   .pf-skills {
     grid-template-columns: 1fr;
   }
@@ -507,6 +705,9 @@
   }
   .pf-contact-heading {
     font-size: 32px;
+  }
+  .pf-cert-grid {
+    grid-template-columns: 1fr;
   }
   .pf-footer {
     flex-direction: column;
