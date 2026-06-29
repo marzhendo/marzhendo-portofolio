@@ -1,336 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marzhendo Galang Saputra - Portfolio</title>
-  <meta name="description" content="Portfolio of Marzhendo Galang Saputra, a Software Engineer based in Purwokerto, ID specializing in Backend development, desktop applications, and Data Science.">
-  <meta property="og:title" content="Marzhendo Galang Saputra — Software Engineer">
-  <meta property="og:description" content="Semester 4 Informatics Engineering student building production-grade desktop apps with Go, Rust, and Tauri.">
-  <meta property="og:image" content="src/photo.jpg">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://marzhendo.dev">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marzhendo Galang Saputra — Software Engineer</title>
+  <meta name="description" content="Portfolio of Marzhendo Galang Saputra, a versatile software engineer based in Purwokerto, ID specializing in backend development, desktop applications, and AI engineering." />
+  <meta property="og:title" content="Marzhendo Galang Saputra — Software Engineer" />
+  <meta property="og:description" content="Semester 4 Informatics Engineering student building production-grade software with Go, Rust, Tauri, and more." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://marzhendo.dev" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="pf-root">
-    <h2 class="sr-only">Portfolio website concept mockup for Marzhendo Galang Saputra with clean minimal aesthetic</h2>
 
-    <!-- NAV -->
-    <nav class="pf-nav">
-      <div class="pf-nav-logo">MARZHENDO.DEV</div>
-      <ul class="pf-nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="pf-status">
-        <div class="pf-dot"></div>
-        Open to work
-      </div>
-    </nav>
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="#" class="nav-logo">MARZHENDO.DEV</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <span class="nav-badge">OPEN TO INTERN</span>
+  </nav>
 
-    <section class="pf-hero" id="about">
-
-      <!-- KOLOM KIRI -->
+  <!-- HERO -->
+  <section id="about">
+    <div class="hero-left">
       <div>
-        <div class="pf-hero-label">Software Engineer · Purwokerto, ID</div>
-        <h1 class="pf-hero-name">Marz<em>hendo</em><br>Galang.</h1>
-        <div class="pf-hero-title">// craft software, secure data, model intelligence</div>
+        <p class="hero-eyebrow">INFORMATICS ENGINEERING · TELKOM UNIVERSITY PURWOKERTO</p>
+        <h1 class="hero-name">Marz<em>hendo</em><br>Galang.</h1>
+        <p class="hero-sub">Purwokerto, ID · Semester IV</p>
       </div>
-
-      <!-- KOLOM KANAN -->
-      <div class="pf-hero-right">
-        <p class="pf-hero-bio">Informatics Engineering student at Telkom University Purwokerto, building production-grade software. Shipped real desktop apps with Go, Rust, and Tauri — including a zero-knowledge password manager and an offline file converter.</p>
-        <div class="pf-hero-tags">
-          <span class="pf-tag">Golang</span>
-          <span class="pf-tag">Python</span>
-          <span class="pf-tag">React</span>
-          <span class="pf-tag">Typescript</span>
-          <span class="pf-tag">Supabase</span>
-          <span class="pf-tag">Wails</span>
-          <span class="pf-tag">Tauri</span>
-        </div>
-        <div class="pf-hero-cta">
-          <a href="src/cv.pdf" download class="pf-btn pf-btn-primary">Download CV</a>
-          <a href="#projects" class="pf-btn pf-btn-secondary">See my work ↓</a>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- STATS -->
-    <div class="pf-stats">
-      <div class="pf-stat"><div class="pf-stat-num">4</div><div class="pf-stat-label">Open Source Projects</div></div>
-      <div class="pf-stat"><div class="pf-stat-num">2024</div><div class="pf-stat-label">Building Since</div></div>
-      <div class="pf-stat"><div class="pf-stat-num">IBM</div><div class="pf-stat-label">AI Certified</div></div>
-      <div class="pf-stat"><div class="pf-stat-num">∞</div><div class="pf-stat-label">Coffee Consumed</div></div>
-    </div>
-
-    <!-- EDUCATION -->
-    <div class="pf-section-header" id="education">
-      <span class="pf-section-title">Education &amp; Credentials</span>
-    </div>
-    <div class="pf-education">
-      <div class="pf-edu-card">
-        <div class="pf-edu-left">
-          <div class="pf-edu-degree">S1 Informatika</div>
-          <div class="pf-edu-school">Telkom University Purwokerto</div>
-          <div class="pf-edu-year">2024 — Present · Semester 4</div>
-        </div>
+      <div class="hero-ctas">
+        <a href="src/cv.pdf" class="btn-primary" target="_blank" rel="noopener">Download CV</a>
+        <a href="#projects" class="btn-ghost">See projects</a>
       </div>
     </div>
-
-    <!-- CERTIFICATES -->
-    <div class="pf-section-header" id="certificates">
-      <span class="pf-section-title">Certificates &amp; Credentials</span>
-    </div>
-    <div class="pf-certificates">
-      <div class="pf-cert-grid">
-
-        <a class="pf-cert-card" href="https://skills.yourlearning.ibm.com/certificate/ALM-COURSE_4058918" target="_blank" rel="noopener">
-          <span class="pf-cert-platform ibm">IBM SkillsBuild</span>
-          <span class="pf-cert-name">Introduction to Artificial Intelligence</span>
-          <span class="pf-cert-date">21 Mei 2026</span>
-          <span class="pf-cert-verify">View credential →</span>
-        </a>
-
-        <a class="pf-cert-card" href="https://skills.yourlearning.ibm.com/certificate/ALM-COURSE_4058927" target="_blank" rel="noopener">
-          <span class="pf-cert-platform ibm">IBM SkillsBuild</span>
-          <span class="pf-cert-name">AI Ethics</span>
-          <span class="pf-cert-date">30 Mei 2026</span>
-          <span class="pf-cert-verify">View credential →</span>
-        </a>
-
-        <a class="pf-cert-card" href="https://skills.yourlearning.ibm.com/certificate/ALM-COURSE_4058859" target="_blank" rel="noopener">
-          <span class="pf-cert-platform ibm">IBM SkillsBuild</span>
-          <span class="pf-cert-name">Introduction to Generative AI</span>
-          <span class="pf-cert-date">30 Mei 2026</span>
-          <span class="pf-cert-verify">View credential →</span>
-        </a>
-
-        <div class="pf-cert-card">
-          <span class="pf-cert-platform ibm">IBM SkillsBuild</span>
-          <span class="pf-cert-name">Classifying Data Using IBM Granite</span>
-          <span class="pf-cert-date">3 Juni 2026</span>
-          <span class="pf-cert-verify no-link">Verification unavailable</span>
+    <div class="hero-right">
+      <div class="terminal">
+        <div>
+          <span class="prompt">$</span><span id="t-line"></span><span class="cursor" id="t-cursor"></span>
         </div>
-
-        <div class="pf-cert-card">
-          <span class="pf-cert-platform ibm">IBM SkillsBuild</span>
-          <span class="pf-cert-name">Unleashing the Power of AI Agents</span>
-          <span class="pf-cert-date">3 Juni 2026</span>
-          <span class="pf-cert-verify no-link">Verification unavailable</span>
+        <div class="sub" id="t-sub">
+          <div>&gt; backend in <span>Go</span> &amp; <span>Python</span></div>
+          <div>&gt; desktop apps with <span>Rust</span> + <span>Tauri</span></div>
+          <div>&gt; building toward fullstack + AI engineering</div>
         </div>
-
-        <a class="pf-cert-card" href="https://coursera.org/verify/8VGJJ15QAYYL" target="_blank" rel="noopener">
-          <span class="pf-cert-platform google">Google / Coursera</span>
-          <span class="pf-cert-name">AI Fundamentals</span>
-          <span class="pf-cert-date">1 Juni 2026</span>
-          <span class="pf-cert-verify">View credential →</span>
-        </a>
-
-        <a class="pf-cert-card" href="https://dicoding.com/certificates/KEXL2R9D0ZG2" target="_blank" rel="noopener">
-          <span class="pf-cert-platform dicoding">Dicoding</span>
-          <span class="pf-cert-name">Introduction to Financial Literacy</span>
-          <span class="pf-cert-date">23 Januari 2026</span>
-          <span class="pf-cert-verify">View credential →</span>
-        </a>
-
-        <div class="pf-cert-card">
-          <span class="pf-cert-platform dqlab">DQLab</span>
-          <span class="pf-cert-name">Guide to Learn SQL with AI at DQLab</span>
-          <span class="pf-cert-date">26 Mei 2026</span>
-          <span class="pf-cert-verify no-link">#DQLABAI003IOQHGP · Verify via QR</span>
-        </div>
-
-        <a class="pf-cert-card" href="https://ngulikdata.com/certificates/wtSE-5N932XZ" target="_blank" rel="noopener">
-          <span class="pf-cert-platform ngulik">Ngulik Data</span>
-          <span class="pf-cert-name">SQL 101: Belajar SQL dari Nol</span>
-          <span class="pf-cert-date">1 Mei 2026</span>
-          <span class="pf-cert-verify">View credential →</span>
-        </a>
-
       </div>
+      <p class="hero-loc">ID · UTC+7 · Available remote &amp; on-site</p>
     </div>
+  </section>
 
-    <!-- PROJECTS SLIDESHOW -->
-    <div class="pf-section-header" id="projects">
-      <span class="pf-section-title">Selected Projects</span>
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="sec-header">
+      <span class="sec-label">SELECTED PROJECTS</span>
+      <h2 class="sec-title">Things I've built.</h2>
     </div>
-    <div class="pf-slideshow">
-      <div class="pf-slides" id="slides">
-
-        <!-- Slide 1: PurePress -->
-        <div class="pf-slide">
-          <div class="pf-slide-visual v1">
-            <!-- TODO: ganti dengan URL raw GitHub screenshot PurePress -->
-            <img src="src/screenshots/PurePress.png" alt="PurePress Screenshot" class="pf-slide-img">
+    <table class="proj-table">
+      <tr onclick="window.open('https://github.com/marzhendo/PurePress', '_blank')">
+        <td><p class="proj-num">01</p></td>
+        <td>
+          <p class="proj-name">PurePress</p>
+          <p class="proj-desc">High-performance, 100% offline desktop application for image and PDF compression. Fast, local, and privacy-first.</p>
+          <div class="proj-tags">
+            <span class="tag">Go</span>
+            <span class="tag">Wails v2</span>
+            <span class="tag">React</span>
+            <span class="tag">Ghostscript</span>
           </div>
-          <div class="pf-slide-info">
-            <div class="pf-slide-num">01 / 04</div>
-            <h3 class="pf-slide-name">🌿 PurePress</h3>
-            <p class="pf-slide-desc">High-performance, 100% offline desktop application for image and PDF compression. Fast, local, and privacy-first.</p>
-            <div class="pf-slide-stack">
-              <span class="pf-stack-pill">Go</span>
-              <span class="pf-stack-pill">React.js</span>
-              <span class="pf-stack-pill">Wails v2</span>
-              <span class="pf-stack-pill">Ghostscript</span>
-            </div>
-            <a href="https://github.com/marzhendo/PurePress" target="_blank" class="pf-slide-link">View project <i class="ti ti-arrow-right" aria-hidden="true"></i></a>
+        </td>
+        <td class="proj-year">2024</td>
+        <td class="proj-arr">→</td>
+      </tr>
+      <tr onclick="window.open('https://github.com/marzhendo/VaultKey', '_blank')">
+        <td><p class="proj-num">02</p></td>
+        <td>
+          <p class="proj-name">VaultKey</p>
+          <p class="proj-desc">Zero-knowledge local password manager. Credentials stay on your machine, encrypted with AES-256-GCM and Argon2id. No cloud, no compromise.</p>
+          <div class="proj-tags">
+            <span class="tag">Tauri</span>
+            <span class="tag">Rust</span>
+            <span class="tag">React</span>
+            <span class="tag">SQLite</span>
           </div>
-        </div>
+        </td>
+        <td class="proj-year">2024</td>
+        <td class="proj-arr">→</td>
+      </tr>
+      <tr onclick="window.open('https://github.com/marzhendo/HMIF-ERP', '_blank')">
+        <td><p class="proj-num">03</p></td>
+        <td>
+          <p class="proj-name">HMIF ERP</p>
+          <p class="proj-desc">Internal ERP system for a student organization — covering member management, financial tracking, inventory, and event pipelines.</p>
+          <div class="proj-tags">
+            <span class="tag">Laravel 11</span>
+            <span class="tag">Blade</span>
+            <span class="tag">Tailwind</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Spatie</span>
+          </div>
+        </td>
+        <td class="proj-year">2025</td>
+        <td class="proj-arr">→</td>
+      </tr>
+      <tr onclick="window.open('https://github.com/marzhendo/neon-stakes', '_blank')">
+        <td><p class="proj-num">04</p></td>
+        <td>
+          <p class="proj-name">Neon Stakes</p>
+          <p class="proj-desc">Transactional betting simulator researching concurrent transaction safety, weighted RNG algorithms, and dark patterns in UI/UX.</p>
+          <div class="proj-tags">
+            <span class="tag">Next.js</span>
+            <span class="tag">Go</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Supabase</span>
+            <span class="tag">Framer Motion</span>
+          </div>
+        </td>
+        <td class="proj-year">2024</td>
+        <td class="proj-arr">→</td>
+      </tr>
+    </table>
+  </section>
 
-        <!-- Slide 2: VaultKey -->
-        <div class="pf-slide">
-          <div class="pf-slide-visual v2">
-            <!-- TODO: ganti dengan URL raw GitHub screenshot VaultKey -->
-            <img src="src/screenshots/Vault-key.png" alt="VaultKey Screenshot" class="pf-slide-img">
-          </div>
-          <div class="pf-slide-info">
-            <div class="pf-slide-num">02 / 04</div>
-            <h3 class="pf-slide-name">🔐 VaultKey</h3>
-            <p class="pf-slide-desc">Zero-knowledge local desktop password manager. Stores and encrypts credentials client-side with AES-256-GCM and Argon2id.</p>
-            <div class="pf-slide-stack">
-              <span class="pf-stack-pill">Tauri</span>
-              <span class="pf-stack-pill">Rust</span>
-              <span class="pf-stack-pill">React.js</span>
-              <span class="pf-stack-pill">TypeScript</span>
-              <span class="pf-stack-pill">SQLite</span>
-            </div>
-            <a href="https://github.com/marzhendo/VaultKey" target="_blank" class="pf-slide-link">View project <i class="ti ti-arrow-right" aria-hidden="true"></i></a>
-          </div>
-        </div>
-
-        <!-- Slide 3: FocusGuard -->
-        <div class="pf-slide">
-          <div class="pf-slide-visual v3">
-            <!-- TODO: ganti dengan URL raw GitHub screenshot FocusGuard -->
-            <img src="src/screenshots/Focus-Guard.png" alt="Focus-Guard Screenshot" class="pf-slide-img">
-          </div>
-          <div class="pf-slide-info">
-            <div class="pf-slide-num">03 / 04</div>
-            <h3 class="pf-slide-name">👁️ Focus-Guard</h3>
-            <p class="pf-slide-desc">AI-powered Pomodoro productivity dashboard. Leverages browser webcam feeds and computer vision to alert users when they are distracted.</p>
-            <div class="pf-slide-stack">
-              <span class="pf-stack-pill">JavaScript</span>
-              <span class="pf-stack-pill">HTML &amp; CSS</span>
-              <span class="pf-stack-pill">TensorFlow.js</span>
-              <span class="pf-stack-pill">Teachable Machine</span>
-            </div>
-            <a href="https://github.com/marzhendo/Focus-Guard" target="_blank" class="pf-slide-link">View project <i class="ti ti-arrow-right" aria-hidden="true"></i></a>
-          </div>
-        </div>
-
-        <!-- Slide 4: Neon Stakes -->
-        <div class="pf-slide">
-          <div class="pf-slide-visual v4">
-            <!-- TODO: ganti dengan URL raw GitHub screenshot Neon Stakes -->
-            <img src="src/screenshots/neon-stakes.png" alt="Neon Stakes Screenshot" class="pf-slide-img">
-          </div>
-          <div class="pf-slide-info">
-            <div class="pf-slide-num">04 / 04</div>
-            <h3 class="pf-slide-name">🎰 Neon Stakes</h3>
-            <p class="pf-slide-desc">Transactional betting simulator built to research concurrent transaction safe states, weighted RNG algorithms, and dark patterns in UI/UX.</p>
-            <div class="pf-slide-stack">
-              <span class="pf-stack-pill">Next.js</span>
-              <span class="pf-stack-pill">Golang</span>
-              <span class="pf-stack-pill">PostgreSQL</span>
-              <span class="pf-stack-pill">Supabase</span>
-              <span class="pf-stack-pill">Framer Motion</span>
-            </div>
-            <a href="https://github.com/marzhendo/neon-stakes" target="_blank" class="pf-slide-link">View project <i class="ti ti-arrow-right" aria-hidden="true"></i></a>
-          </div>
-        </div>
-
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="sec-header">
+      <span class="sec-label">SKILLS &amp; TOOLS</span>
+      <h2 class="sec-title">How I build.</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-col">
+        <p class="skill-col-title">BACKEND &amp; SYSTEMS</p>
+        <p class="skill-col-intro">Primary stack, used across production projects.</p>
+        <ul class="skill-list">
+          <li>Go / Golang</li>
+          <li>Python</li>
+          <li>Node.js</li>
+          <li>Gin / GORM</li>
+          <li>REST API</li>
+        </ul>
+      </div>
+      <div class="skill-col">
+        <p class="skill-col-title">DESKTOP &amp; FRONTEND</p>
+        <p class="skill-col-intro">Shipped native desktop apps and web interfaces.</p>
+        <ul class="skill-list">
+          <li>Rust + Tauri</li>
+          <li>Wails v2</li>
+          <li>React / Next.js</li>
+          <li>TypeScript</li>
+          <li>Tailwind CSS</li>
+        </ul>
+      </div>
+      <div class="skill-col">
+        <p class="skill-col-title">DATABASE &amp; CLOUD</p>
+        <p class="skill-col-intro">Hands-on across relational databases and cloud platforms.</p>
+        <ul class="skill-list">
+          <li>MySQL</li>
+          <li>PostgreSQL</li>
+          <li>Supabase</li>
+          <li>Docker</li>
+          <li>Laravel 11</li>
+        </ul>
+      </div>
+      <div class="skill-col">
+        <p class="skill-col-title">DATA &amp; AI</p>
+        <p class="skill-col-intro">Exploring data pipelines and applied machine learning.</p>
+        <ul class="skill-list">
+          <li>Pandas / NumPy</li>
+          <li>Matplotlib</li>
+          <li>Scikit-learn</li>
+          <li>TensorFlow.js</li>
+          <li>Jupyter</li>
+        </ul>
       </div>
     </div>
+  </section>
 
-    <!-- CONTROLS -->
-    <div class="pf-slide-controls">
-      <button class="pf-ctrl-btn" id="prev" aria-label="Previous"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
-      <button class="pf-ctrl-btn" id="next" aria-label="Next"><i class="ti ti-arrow-right" aria-hidden="true"></i></button>
-      <div class="pf-dots">
-        <div class="pf-dot-ind active" data-i="0"></div>
-        <div class="pf-dot-ind" data-i="1"></div>
-        <div class="pf-dot-ind" data-i="2"></div>
-        <div class="pf-dot-ind" data-i="3"></div>
-      </div>
-      <div class="pf-slide-counter" id="counter">01 / 04</div>
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-left">
+      <h2 class="contact-headline">Let's build<br><em>something</em><br>together.</h2>
+      <p class="contact-body">Available for internship roles — backend, fullstack, or anything in between. Remote-friendly, fast learner, ships real software.</p>
     </div>
+    <div class="contact-right">
+      <a href="mailto:marzhendo03@gmail.com" class="contact-link">
+        <span class="contact-link-label">EMAIL</span>
+        <span class="contact-link-val">marzhendo03@gmail.com</span>
+        <span class="contact-link-arr">→</span>
+      </a>
+      <a href="https://github.com/marzhendo" class="contact-link" target="_blank" rel="noopener">
+        <span class="contact-link-label">GITHUB</span>
+        <span class="contact-link-val">github.com/marzhendo</span>
+        <span class="contact-link-arr">→</span>
+      </a>
+      <a href="https://linkedin.com/in/marzhendo" class="contact-link" target="_blank" rel="noopener">
+        <span class="contact-link-label">LINKEDIN</span>
+        <span class="contact-link-val">linkedin.com/in/marzhendo</span>
+        <span class="contact-link-arr">→</span>
+      </a>
+      <a href="https://wa.me/6285156975860" class="contact-link" target="_blank" rel="noopener">
+        <span class="contact-link-label">WHATSAPP</span>
+        <span class="contact-link-val">+62 851-5697-5860</span>
+        <span class="contact-link-arr">→</span>
+      </a>
+    </div>
+  </section>
 
-    <!-- SKILLS -->
-    <div class="pf-section-header" id="skills" style="padding-top: 40px;">
-      <span class="pf-section-title">Skills &amp; Expertise</span>
-    </div>
-    <div class="pf-skills">
-      <!-- Column 1: Backend & Desktop -->
-      <div class="pf-skills-col">
-        <div class="pf-col-title">Backend &amp; Desktop</div>
-        <div class="pf-skill-row"><span class="pf-skill-name">Go / Golang</span><span class="pf-skill-level expert">Expert</span></div>
-        <div class="pf-skill-row"><span class="pf-skill-name">Python</span><span class="pf-skill-level advanced">Advanced</span></div>
-        <div class="pf-skill-row"><span class="pf-skill-name">Node.js</span><span class="pf-skill-level familiar">Familiar</span></div>
-        <div class="pf-skill-row"><span class="pf-skill-name">Wails / Tauri</span><span class="pf-skill-level advanced">Advanced</span></div>
-      </div>
-      <!-- Column 2: Frontend & Styling -->
-      <div class="pf-skills-col">
-        <div class="pf-col-title">Frontend &amp; Styling</div>
-        <div class="pf-skill-row"><span class="pf-skill-name">HTML &amp; CSS</span><span class="pf-skill-level advanced">Advanced</span></div>
-        <div class="pf-skill-row"><span class="pf-skill-name">JavaScript</span><span class="pf-skill-level advanced">Advanced</span></div>
-        <div class="pf-skill-row"><span class="pf-skill-name">TypeScript</span><span class="pf-skill-level familiar">Familiar</span></div>
-        <div class="pf-skill-row"><span class="pf-skill-name">React / Tailwind</span><span class="pf-skill-level advanced">Advanced</span></div>
-      </div>
-      <!-- Column 3: Database & Cloud -->
-      <div class="pf-skills-col">
-        <div class="pf-col-title">Database &amp; Cloud</div>
-        <div class="pf-skill-row"><span class="pf-skill-name">MySQL</span><span class="pf-skill-level advanced">Advanced</span></div>
-        <div class="pf-skill-row"><span class="pf-skill-name">Supabase</span><span class="pf-skill-level advanced">Advanced</span></div>
-        <div class="pf-skill-row"><span class="pf-skill-name">PostgreSQL</span><span class="pf-skill-level advanced">Advanced</span></div>
-        <div class="pf-skill-row"><span class="pf-skill-name">Docker / CI-CD</span><span class="pf-skill-level familiar">Familiar</span></div>
-      </div>
-      <!-- Column 4: Data Science -->
-      <div class="pf-skills-col">
-        <div class="pf-col-title">Data Science</div>
-        <div class="pf-skill-row"><span class="pf-skill-name">Jupyter Notebook</span><span class="pf-skill-level advanced">Advanced</span></div>
-        <div class="pf-skill-row"><span class="pf-skill-name">Pandas &amp; NumPy</span><span class="pf-skill-level advanced">Advanced</span></div>
-        <div class="pf-skill-row"><span class="pf-skill-name">Matplotlib &amp; Seaborn</span><span class="pf-skill-level familiar">Familiar</span></div>
-        <div class="pf-skill-row"><span class="pf-skill-name">Scikit-Learn</span><span class="pf-skill-level familiar">Familiar</span></div>
-      </div>
-    </div>
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-copy">© 2026 MARZHENDO.DEV</span>
+    <span class="footer-copy">DESIGNED &amp; BUILT WITH PRECISION</span>
+  </footer>
 
-    <!-- CONTACT -->
-    <div class="pf-contact" id="contact">
-      <div>
-        <h2 class="pf-contact-heading">Let's build<br><em>something</em><br>together.</h2>
-        <p class="pf-contact-sub">Available for full-time roles, freelance projects, open-source collaboration, and custom backend/desktop engineering.</p>
-      </div>
-      <div class="pf-contact-links">
-        <a href="mailto:marzhendo03@gmail.com" class="pf-contact-link">
-          <span><i class="ti ti-mail" aria-hidden="true"></i> Email</span>
-          <span>marzhendo03@gmail.com →</span>
-        </a>
-        <a href="https://github.com/marzhendo" target="_blank" class="pf-contact-link">
-          <span><i class="ti ti-brand-github" aria-hidden="true"></i> GitHub</span>
-          <span>github.com/marzhendo →</span>
-        </a>
-        <a href="https://www.linkedin.com/in/marzhendo/" target="_blank" class="pf-contact-link">
-          <span><i class="ti ti-brand-linkedin" aria-hidden="true"></i> LinkedIn</span>
-          <span>linkedin.com/in/marzhendo →</span>
-        </a>
-        <a href="https://wa.me/6285156975860" target="_blank" class="pf-contact-link">
-          <span><i class="ti ti-brand-whatsapp" aria-hidden="true"></i> WhatsApp</span>
-          <span>+6285156975860 →</span>
-        </a>
-      </div>
-    </div>
-
-    <!-- FOOTER -->
-    <footer class="pf-footer">
-      <span class="pf-footer-text">© 2026 MARZHENDO.DEV</span>
-      <span class="pf-footer-text">DESIGNED &amp; BUILT WITH PRECISION</span>
-    </footer>
-  </div>
+  <script src="main.js" defer></script>
 </body>
 </html>
